@@ -1,0 +1,86 @@
+:root {
+  --primary: white;
+  --secondary: white;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  // min-height: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  color: #333;
+  color: var(--primary);
+  text-align: center;
+  transition: .5s;
+  background-color: #fff;
+  background-color: var(--secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  display: inline-block;
+  padding: 1.2rem 3.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &.login {
+    margin-top: 2rem;
+  }
+
+  &:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+  }
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0;
+  display: flex;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+h1 {
+  margin-bottom: 4rem;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  font-family: 'Averia Serif Libre', cursive;
+  font-size: 12vw;
+  font-weight: normal;
+
+  @media screen and (min-width: 450px) {
+    font-size: 6rem;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 10rem;
+  }
+}
+
+footer {
+  padding: 2rem;
+}
