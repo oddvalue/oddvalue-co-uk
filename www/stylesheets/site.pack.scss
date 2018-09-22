@@ -25,7 +25,8 @@ body {
   color: #333;
   color: var(--primary);
   text-align: center;
-  transition: .5s;
+  transition: 2s;
+  padding: 1em;
   background-color: #fff;
   background-color: var(--secondary);
   -webkit-font-smoothing: antialiased;
@@ -38,6 +39,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
+  transition: background-color .5s;
   color: inherit;
   cursor: pointer;
 

@@ -25,6 +25,6 @@ import themes from './colors.json';
 
     setInterval(() => {
         changeTheme();
-    }, 1000);
+    }, 2000);
     changeTheme();  
 })();
